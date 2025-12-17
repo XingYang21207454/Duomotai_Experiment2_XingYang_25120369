@@ -38,7 +38,7 @@
 
 ## 环境配置与安装 (Installation)
 所需库为chromadb, sentence-transformers, transformers, torch, Pillow, pypdf, openai
-所需模型为embedding模型MiniLM和CLIP模型clip-vit-base, 项目目录中已经包含，也可以自行下载
+所需模型为embedding模型MiniLM和CLIP模型clip-vit-base, 项目中已经包含目录，但需自行下载，请下载MiniLM模型和CLIP模型至./MiniLM和./clip_model
 同时确保设备连接网络，以保证api接口顺利运转
 
 
@@ -81,5 +81,6 @@ LocalAI_Agent/
 ### 以文搜图 (Search Image)
 `python main.py search_image "house"`  
 ![a](./README_image/a5.png)
+
 
 
