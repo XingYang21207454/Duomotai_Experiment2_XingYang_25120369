@@ -44,33 +44,42 @@
 
 ## 推荐目录结构
 LocalAI_Agent/
-├── main.py              入口文件  
-|── download/            [输入] 下载好的单篇论文  
-├── raw_papers/          [输入] 需要整理的论文文件夹  
-├── raw_images/          [输入] 把待整理的图片丢到这里  
-├── papers/              [输出] 整理后的论文会自动移动到这里  
-├── loaded_images/       [输出] 索引后的图片会自动移动到这里  
-└── db/                  [自动生成] 向量数据库文件  
+├── main.py——————————入口文件    
+|── download/————————输入— 下载好的单篇论文    
+├── raw_papers/——————输入— 需要整理的论文文件夹    
+├── raw_images/——————输入— 把待整理的图片丢到这里    
+├── papers/——————————输出— 整理后的论文会自动移动到这里    
+├── loaded_images/———输出— 索引后的图片会自动移动到这里    
+└── db/——————————————自动生成— 向量数据库文件    
 
 ## 使用说明 (Usage)
 所有功能通过 main.py 统一调用
 
+### 语义搜索论文 (Search Paper)
+`python main.py search_paper "Lora散射研究的不足是什么？"`
+![a](./README_image/a1.png)
+
 ### 添加单篇论文 (Add Paper)
 `python main.py add_paper ./downloads/new_paper.pdf`
+![a](./README_image/a2.png)
 
 ### 一键批量整理 (Organize)
-使用默认主题整理（"CV, NLP, RL, IoT"）：
-`python main.py organize ./raw_papers`
+使用默认主题整理（"CV, NLP, RL, IoT"）：  
+`python main.py organize ./raw_papers`  
+![a](./README_image/a3.png)
 
 自定义主题整理：
 `python main.py organize ./raw_papers --topics "Physics, Chemistry, Biology"`
 
-### 语义搜索论文 (Search Paper)
-`python main.py search_paper "How does the attention mechanism work?"`
+整理结果：  
+![a](./README_image/a6.png)
 
 ### 批量导入图片 (Add Image)
 `python main.py add_image ./raw_images`
+![a](./README_image/a4.png)
 
 ### 以文搜图 (Search Image)
-`python main.py search_image "house"`
+`python main.py search_image "house"`  
+![a](./README_image/a5.png)
+
 
