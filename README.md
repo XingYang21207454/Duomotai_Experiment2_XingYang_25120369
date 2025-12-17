@@ -55,21 +55,22 @@ LocalAI_Agent/
 ## 使用说明 (Usage)
 所有功能通过 main.py 统一调用
 
-# 添加单篇论文 (Add Paper)
-python main.py add_paper ./downloads/new_paper.pdf
+### 添加单篇论文 (Add Paper)
+`python main.py add_paper ./downloads/new_paper.pdf`
 
-# 一键批量整理 (Organize)
+### 一键批量整理 (Organize)
 使用默认主题整理（"CV, NLP, RL, IoT"）：
 python main.py organize ./raw_papers
 
 自定义主题整理：
 python main.py organize ./raw_papers --topics "Physics, Chemistry, Biology"
 
-# 语义搜索论文 (Search Paper)
+### 语义搜索论文 (Search Paper)
 python main.py search_paper "How does the attention mechanism work?"
 
-# 批量导入图片 (Add Image)
+### 批量导入图片 (Add Image)
 python main.py add_image ./raw_images
 
-# 以文搜图 (Search Image)
+### 以文搜图 (Search Image)
+
 python main.py search_image "house"
